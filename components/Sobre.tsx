@@ -69,8 +69,8 @@ export function Sobre() {
           <figure className="mb-6 overflow-hidden rounded-[22px] border border-white/70 shadow-soft">
             <img
               src="/fotos/stephany-jaleco-princesas.webp"
-              width={1022}
-              height={1280}
+              width={1400}
+              height={1752}
               loading="lazy"
               decoding="async"
               alt="Dra. Stephany Carvalho de jaleco infantil, especialista em odontopediatria"

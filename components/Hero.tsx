@@ -73,8 +73,8 @@ function PortraitSlot() {
       <div className="overflow-hidden rounded-t-[210px] rounded-b-[32px] border border-white/70 shadow-soft">
         <img
           src="/fotos/stephany-consultorio.webp"
-          width={853}
-          height={1279}
+          width={1400}
+          height={2100}
           alt="Dra. Stephany Carvalho, odontopediatra em São Raimundo Nonato - PI, sorrindo sentada no consultório"
           fetchPriority="high"
           decoding="async"
