@@ -3,8 +3,8 @@ import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function Local() {
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-    `${site.street}, ${site.district}, ${site.city} - ${site.state}, ${site.zip}`
-  )}&hl=pt-BR&z=16&output=embed`;
+    site.shortName
+  )}&ftid=${site.mapsFtid}&hl=pt-BR&z=16&output=embed`;
 
   return (
     <section id="contato" className="py-20 sm:py-28">
@@ -35,6 +35,16 @@ export function Local() {
                 <br />
                 CEP {site.zip}
               </address>
+
+              <a
+                href={site.mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-2 font-body text-[12px] uppercase tracking-[0.16em] text-rose transition-colors hover:text-ink"
+              >
+                Ver perfil no Google
+                <span aria-hidden="true">→</span>
+              </a>
 
               <dl className="mt-8 space-y-3 border-t border-black/[0.07] pt-6">
                 <dt className="font-body text-[10px] uppercase tracking-[0.2em] text-gold">
@@ -100,7 +110,22 @@ export function Local() {
           </div>
         </div>
 
-        <div className="mt-14 rounded-[24px] border border-black/[0.06] bg-white/60 p-8 sm:p-10">
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-[24px] border border-black/[0.06] bg-mint/40 p-6 sm:p-8">
+          <p className="font-body text-[15px] leading-relaxed text-ink">
+            Foi atendido pela Dra. Stephany? Sua avaliação ajuda outras famílias a
+            encontrar o consultório.
+          </p>
+          <a
+            href={site.mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-6 py-3.5 font-body text-[12px] uppercase tracking-[0.18em] text-cream transition-transform hover:-translate-y-0.5"
+          >
+            Avalie nosso atendimento no Google
+          </a>
+        </div>
+
+        <div className="mt-8 rounded-[24px] border border-black/[0.06] bg-white/60 p-8 sm:p-10">
           <h3 className="font-display text-[1.7rem] leading-snug text-ink">
             Famílias de toda a região da Serra da Capivara
           </h3>

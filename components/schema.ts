@@ -43,7 +43,7 @@ export const dentistSchema = {
     ...serviceAreaBA.map((c) => ({ "@type": "City", name: `${c} - BA` })),
     { "@type": "AdministrativeArea", name: "Região da Serra da Capivara" },
   ],
-  sameAs: [site.instagramUrl],
+  sameAs: [site.instagramUrl, site.mapsUrl],
   employee: { "@id": `${site.url}/#stephany` },
   availableService: [
     "Primeira consulta odontológica infantil",

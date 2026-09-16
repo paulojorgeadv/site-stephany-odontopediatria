@@ -15,8 +15,12 @@ export const site = {
   stateName: "Piauí",
   zip: "64770-000",
   region: "Serra da Capivara",
-  geo: { lat: -9.0195735, lng: -42.696233 },
-  mapsUrl: "https://maps.app.goo.gl/R2dduTPSHV1Np1Jj7",
+  geo: { lat: -9.020867, lng: -42.696207 },
+  // Perfil da Empresa (Google Business Profile) verificado da Dra. Stephany no Google Maps.
+  mapsUrl: "https://maps.app.goo.gl/75YuqyLQkBbGScQv7",
+  // Identificador do local (CID) usado para embutir o mapa referenciando o Perfil da Empresa
+  // verificado (nome, categoria e avaliações), em vez de um pino genérico do endereço.
+  mapsFtid: "0x77a052d621aff87:0x9e3bed58a1e13adc",
   instagram: "dra.stephanycarvalhoo",
   instagramUrl: "https://instagram.com/dra.stephanycarvalhoo",
   phoneDisplay: "(89) 98125-4272",
