@@ -44,8 +44,8 @@ export function Acolhimento() {
           <figure className="mb-5 overflow-hidden rounded-[22px] border border-white/70 shadow-soft">
             <img
               src="/fotos/stephany-jaleco-azul.webp"
-              width={700}
-              height={876}
+              width={1022}
+              height={1280}
               loading="lazy"
               decoding="async"
               alt="Dra. Stephany Carvalho segurando um bichinho de pelúcia usado para acolher crianças na consulta"
